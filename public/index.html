@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WebSocket</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+
+<body>
+    <aside>
+        <div id="one" class="active">Pokój 1</div>
+        <div id="two">Pokój 2</div>
+    </aside>
+    <main>
+        <div id="chat-window">
+            <div id="output"></div>
+        </div>
+        <form>
+            <input id="message" type="text" placeholder="Message" />
+            <button type="submit" id="send" class="Pokój-1">Send</button>
+        </form>
+    </main>
+    <script src="./javascript/chat.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+main {
+    min-height: 100vh;
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+strong{
+    color: rgba(10, 10, 136, 0.767);
+}
+
+#chat-window {
+    flex-grow: 1;
+    background: rgba(128, 128, 128, 0.151);
+    width: 100%;
+}
+#output{
+    padding: 30px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+input[type=text] {
+    flex-grow: 1;
+    height: 50px;
+}
+
+button[type=submit] {
+    flex-basis: 10%;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #c38988;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    /* font-weight: 100; */
+
+}
+
+
+aside {
+    min-height: 100vh;
+    flex-basis: 25%;
+    background: rgba(143, 34, 34, 0.534);
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    overflow: hidden;
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 3px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#one {
+    margin-top: 60px;
+}
+
+
+#one,
+#two
+{
+    position: relative;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    margin: 30px;
+    width: 50%;
+    padding-bottom: 10px;
+    text-align: center;
+}
+#one.active,
+#two.active
+{
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+aside::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background-attachment: fixed;
+    background-position: center;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+
+}
